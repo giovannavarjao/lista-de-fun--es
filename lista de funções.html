@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <script>
+        function cubo() {
+            var x = document.getElementById("valcubo1").value;
+            document.getElementById("rescubo1").innerHTML = x * x * x;
+        }
+    </script>
+    <script>
+        function F2c() {
+            var var1 = document.getElementById("valf2c");
+            document.getElementById("resf2c").innerHTML = (var1-32) / 1.8 
+        }
+    </script>
+    <script>
+        function triangulo() {
+            var var2 = document.getElementById("valtri");
+            document.getElementById("restri").innerText = (var2 * base) / 2
+        }
+    </script>
+    <script>
+        function Acirculo() {
+            var var3 = document.getElementById("valAcir);
+            document.getElementById("resAcir").innerText =3, 14 * (var3 * var3)
+        }
+    </script>
+    <script>
+        function (params) {
+            var var1 = document.getElementById("val1");
+            var var2 = document.getElementById("val2");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado").innerText = function peri(raio) {
+                return (2 * 3, 14) * raio;
+            } + " " + var2.value;
+        }
+    </script>
+    <script>
+        function Desconto() {
+            //window.alert("teste")
+            var var1 = document.getElementById("val1");
+            var var2 = document.getElementById("val2");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado").innerText = function descont(valorinicial) {
+                return valorinicial * 5 / 100;
+            } + " " + var2.value;
+        }
+    </script>
+    <script>
+        function Idade() {
+            //window.alert("teste")
+            var var1 = document.getElementById("val1");
+            var var2 = document.getElementById("val2");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado").innerText = function idad(ano_de_nacimento) {
+                let x = (2023 - ano_de_nacimento);
+                if (x < 18) {
+                    return " menor de idade ";
+                } else {
+                    return "maior de idade";
+                }
+            } + " " + var2.value;
+        }
+    </script>
+    <div>
+        <input id="valcubo1" value="5">
+        <button onclick="cubo()">cubo</button>
+        <p id="rescubo1">XXXX</p>
+    </div>
+    <div>
+        <input id="valf2c" value="320">
+        <button onclick="F2c()">F2c</button>
+        <p id="resf2c">XXXX</p>
+    </div>
+
+    <div>
+        <input id="valtri" value="30">
+        <button onclick="triangulo()">triangulo</button>
+        <p id="resultado">XXXX</p>
+    </div>
+
+    <div>
+        <input id="val1" value="1">
+        <button onclick="Area circulo()">Area do circulo</button>
+        <p id="resultado">XXXX</p>
+    </div>
+
+    <div>
+        <input id="val1" value="1">
+    <button onclick="Perimetro circulo()">Perimetro</button>
+    <p id="resultado">XXXX</p>
+    </div>
+
+
+    <div>
+        <input id="val1" value="1">
+        <button onclick="Desconto()">descontar</button>
+        <p id="resultado">XXXX</p>
+    </div>
+
+    <div>
+        <input id="val1" value="1">
+        <button onclick="Idade()">idade</button>
+        <p id="resultado">XXXX</p>
+    </div>
+</body>
+
+</html>
